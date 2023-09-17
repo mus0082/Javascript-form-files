@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="table&form">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <h1>
+                Assignment 2.
+            </h1>
+        </header>
+
+        <main>
+            <table>
+                <form name="myForm">
+                    <tr>
+                        <td>
+                            <label for="Name">
+                                Name<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="Name" placeholder="FullName" />
+                            <div id="result">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="Phone Number">
+                                Phone Number
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="phoneNumber" maxlength="12" placeholder="phoneNumber" />
+                            <div id="phoneErrorNumber">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ZipCode">
+                                Zip Code<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="zipCode" maxlength="7" placeholder="Postal code" />
+                            <div id="PostalErrorCode">
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="Address1">
+                                Address Line <span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="AddressLine1" placeholder="Address" />
+                            <div id="AddressError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="City">
+                                City<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="citySelection" placeholder="Enter a City" />
+                            <div id="CityError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Province">
+                                Province<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <select id="province">
+                                <option value="">Select Province</option>
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NL">Newfoundland and Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="QC">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NU">Nunavut</option>
+                                <option value="YT">Yukon</option>
+                            </select>
+                            <div id="provinceError">
+                            </div>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+
+            <h2> Fields with specific format</h2>
+            <table>
+                <form name="specificField">
+                    <tr>
+                        <td>
+                            <label for="Credit-Card">
+                                Credit-Card
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="Credit-Card" maxlength="19" placeholder="eg: 4111-1111-1111-1111" />
+                            <div id="CreditCardError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Credit Card Expiry Month">
+                                Credit Card Expiry Month<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="expiryMonth" maxlength="3" placeholder="eg: NOV" />
+                            <div id="monthExpiryError">
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="Credit Card Expiry Year">
+                                Credit Card Expiry Year<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="creditExpiryYear" maxlength="4" placeholder="eg: 2021" />
+                            <div id="yearExpiryError">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">
+                                Email<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="Email" id="EmailSelection" placeholder="eg: test@test.com" />
+                            <div id="emailIncorrect">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Password">
+                                Password<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" id="Password" />
+                            <div id="incorrectPassword">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Confirm Password">
+                                Confirm Password<span>&#42;</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" id="confirmPassword" />
+                            <div id="PasswordIncorrect">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Price"> Product Bought:</label>
+
+                        </td>
+                        <td>
+                            <input type="number" id="productOfItem" placeholder="Product">
+                            <div id="productError">
+
+                            </div>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </main>
+        <div class="containerFooter">
+            <footer>
+                <input type="submit" onclick="validateForm();" value="Submit" class="btn">
+
+                <p id="formReceipt"></p>
+
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
